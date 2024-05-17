@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        android:text="Email"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
